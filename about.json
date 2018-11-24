@@ -1,0 +1,24 @@
+{
+  "name": "Parkinson's UK",
+  "about_url": "URL",
+  "license_url": "URL",
+  "assets": {
+      "stencilregular": "assets/parkinsonsuk_stencilregular.woff",
+      "heroimage": "assets/hero.jpg",
+      "logo": "assets/logo_transparent.png"
+  },
+  "color_schemes": {
+      "ParkinsonsUK": {
+       "primary": "222222",
+       "secondary": "ffffff",
+       "tertiary": "0088cc",
+       "quaternary": "0093c9",
+       "header_background": "ffffff",
+       "header_primary": "333333",
+       "highlight": "ffff4d",
+       "danger": "e45735",
+       "success": "009900",
+       "love": "fa6c8d"
+     }
+  }
+}
