@@ -6,3 +6,129 @@ h1 {
     @font-face{font-family:parkinsonsuk_stencilregular;
     src:url($stencilregular);
 }
+
+header {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.region-header {
+    font-style: normal;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    background-color: #0093C9;
+    height: 50px;
+}
+
+.region-header .region-header-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    text-align: right;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #222222;
+}
+.region-header .region-header-wrapper {
+    line-height: 50px;
+}
+
+.region-header .region-header-wrapper .block {
+    display: block;
+    white-space: nowrap;
+}
+
+.region-header .region-header-wrapper .block-system-branding-block {
+    width: 265px;
+    position: relative;
+    -ms-flex-item-align: left;
+    align-self: left;
+    margin-left: -5px; /* overlap the other logo */
+}
+.region-header .region-header-wrapper .block {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.region-header div.region-header-wrapper, html.puk-2018 .region-header div.region-header-wrapper #cludo-search-content-form {
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+.region-header .region-header-wrapper {
+    line-height: 50px;
+    text-align: right;
+}
+
+.region-header .region-header-wrapper .block.style-phone a::before {
+
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFF' fill='%23FFF' d='M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-52.5-3.5T1151 1520t-47.5-14.5-55.5-20.5-49-18q-98-35-175-83-128-79-264.5-215.5T344 904q-48-77-83-175-3-9-18-49t-20.5-55.5T208 577t-12.5-57.5T192 467q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z'/%3E%3C/svg%3E") 50% 50% no-repeat;
+    display: inline-block;
+    content: '';
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-position-y: 3px;
+
+}
+
+.region-header .region-header-wrapper .block-system-branding-block a.site-logo img {
+    width: 225px;
+    position: absolute;
+    z-index: 2500;
+    left: 15px;
+    border: 0;
+}
+
+
+.region-header .region-header-wrapper .block a:visited, .region-header .region-header-wrapper .block a, .region-header .region-header-wrapper .block a:hover {
+    color: #FFF;
+    text-decoration: none;
+    outline: 0;
+}
+a {
+    background-color: transparent;
+}
+.region-header .region-header-wrapper .block {
+    white-space: nowrap;
+}
+
+.region-header .region-header-wrapper .block-system-branding-block a.site-logo::before {
+
+    content: '';
+    width: 250px;
+    height: 167px;
+    background-color: #FFF;
+    transform: rotate(-4deg);
+    position: absolute;
+    z-index: 2499;
+    top: -40px;
+    left: 1px;
+
+}
+
+/***/
+
+
+header.d-header {
+    background-color: #4b4b4b;
+
+    .headerLink a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+.anon header.d-header .headerLink a {
+    font-size: 12px;
+    padding: 6px 6px;
+}
+
+
+/* back to normal when docked */
+body.docked header.d-header {
+    background-color: #fff;
+}

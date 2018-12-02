@@ -1,11 +1,39 @@
-h1 {
-    color:#0093C9;
-    font-size: 1.75em;
-    font-weight:lighter;
-    font-family:parkinsonsuk_stencilregular,sans-serif}
-    @font-face{font-family:parkinsonsuk_stencilregular;
-    src:url(/uploads/db7928/original/1X/4b7d21bbc91d309d87cae9971e4d554913154ed5.woff);
+#intro {
+    ul {
+        list-style-type: none;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        text-align: right;
+        a {
+           color: #222222;
+       }
+    }
+}
 
+
+.mobile-view {
+    .region-header .region-header-wrapper .block-system-branding-block a.site-logo::before {
+        width: 150px;
+        height: 100px;
+        left: 10px;
+        top: -5px;
+    }
+
+    .region-header .region-header-wrapper .block-system-branding-block a.site-logo img {
+        width: 135px;
+        top: 5px;
+    }
+    .region-header .region-header-wrapper .block.style-phone a::before {
+        background: none;
+    }
+
+
+    header.d-header {
+        background-color: #0093C9;
+    }
+    .d-header-icons .icon {
+
+        color: #fff;
 
     }
-    
+}
