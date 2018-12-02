@@ -16,16 +16,17 @@
     display: none;
 }
 #hero img {
-     
+
 }
 body.navigation-categories #hero, body.navigation-categories #intro {
     display: block;
 }
 body.navigation-categories #main-outlet {
-    padding-top: 0;
+    padding-top: 53px;
 }
 #intro {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #intro {
@@ -56,18 +57,21 @@ body.navigation-categories #main-outlet {
         width: 100%;
     }
     .left {
-      width: 75%;
-      padding-right: 15px;
+      width: 50%;
+      padding: 0px;
+      margin: 0px;
     }
 
     .right {
       float: right;
-      padding-left: 15px;
-      width: 20%;
-    }
+      width: 50%;
+      padding: 0px;
+      margin: 0px;
 
-    .right img {
-        max-width: 250px;
+      .content {
+          padding-top: 10px;
+          padding-left: 15px;
+      }
     }
 
     .row:after {
