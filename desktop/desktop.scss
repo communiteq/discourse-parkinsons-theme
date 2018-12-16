@@ -37,7 +37,7 @@ body.navigation-categories #main-outlet {
         float: left;
         font-family: 'Open Sans', sans-serif;
     }
-    .column p, .column ul {
+    .column p {
         font-size: 12pt;
         margin-top: 0px;
 
@@ -47,11 +47,18 @@ body.navigation-categories #main-outlet {
         list-style-type: none;
         font-weight: bold;
     }
+    .column ul li {
+        display: inline;
+        margin-left: 5px;
+    }
     .column ul a {
-        color: #222222;
+        background-color: #08c;
+        padding: 6px 10px;
+        font-weight: normal;
+        color: #fff;
     }
     .column ul {
-        text-align: right;
+        text-align: center;
     }
     .column img {
         width: 100%;
