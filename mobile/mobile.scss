@@ -1,4 +1,12 @@
 #intro {
+    display: none;
+}
+
+body.navigation-categories #intro {
+    display: block;
+}
+
+#intro {
     ul {
         list-style-type: none;
         font-weight: bold;
