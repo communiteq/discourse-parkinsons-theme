@@ -1,7 +1,7 @@
 {
-  "name": "Parkinson's UK",
-  "about_url": "URL",
-  "license_url": "URL",
+  "name": "Parkinson's UK Dec18",
+  "about_url": "https://github.com:o7n/dc_theme_parkinsons.git",
+  "license_url": "https://github.com:o7n/dc_theme_parkinsons.git",
   "assets": {
       "stencilregular": "assets/parkinsonsuk_stencilregular.woff",
       "heroimage": "assets/hero.jpg",
