@@ -5,7 +5,7 @@
   "assets": {
       "stencilregular": "assets/parkinsonsuk_stencilregular.woff",
       "heroimage": "assets/hero.jpg",
-      "logo": "assets/logo_transparent.png"
+      "logo": "assets/parkinsons_logo_192.png"
   },
   "color_schemes": {
       "ParkinsonsUK": {
