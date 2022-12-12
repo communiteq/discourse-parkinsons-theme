@@ -1,10 +1,23 @@
-h1 {
-    color:#0093C9;
-    font-size: 2.1em;
-    font-weight:lighter;
-    font-family:parkinsonsuk_stencilregular,sans-serif}
-    @font-face{font-family:parkinsonsuk_stencilregular;
-    src:url($stencilregular);
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --heading-font-family: Nunito, "Open Sans", sans-serif;
+    --font-family: Nunito, sans-serif;
+    --base-font-size: 18px;
+    --primary: #01011c;
+    --tertiary-low: #00adf0;
+
+    /* Custom colors */
+    --region-header-bg-color: #000045;
+    --region-header-color: #222222;
+    --region-header-height: 50px;
+    --region-header-link-color: #00adf0;
+    --region-header-helpline-link-color: #ffffff;
+}
+
+#topic-title h1 {
+    font-size: 2.5em;
+    font-weight: 700;
 }
 
 header {
@@ -14,10 +27,9 @@ header {
 
 .region-header {
     font-style: normal;
-    font-family: 'Open Sans',sans-serif;
-    font-weight: 600;
-    background-color: #0093C9;
-    height: 50px;
+    font-weight: 400;
+    background-color: var(--region-header-bg-color);
+    height: var(--region-header-height);
 }
 
 .region-header .region-header-wrapper {
@@ -27,12 +39,12 @@ header {
     display: flex;
     -ms-flex-pack: end;
     text-align: right;
-    font-size: 16px;
-    font-size: 1rem;
-    color: #222222;
+    font-size: 18px;
+    color: var(--region-header-color);
 }
 .region-header .region-header-wrapper {
-    line-height: 50px;
+    line-height: var(--region-header-height);
+    text-align: right;
 }
 
 .region-header .region-header-wrapper .block {
@@ -50,14 +62,24 @@ header {
 .region-header .region-header-wrapper .block {
     padding-left: 1em;
     padding-right: 1em;
+
+    a, a:visited, a:hover {
+        color: var(--region-header-link-color);
+        text-decoration: none;
+        outline: 0;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.region-header .region-header-wrapper #block-helpline {
+    a, a:visited, a:hover {
+        color: var(--region-header-helpline-link-color);
+    }
 }
 .region-header div.region-header-wrapper, html.puk-2018 .region-header div.region-header-wrapper #cludo-search-content-form {
     font-size: 18px;
-    font-size: 1.125rem;
-}
-.region-header .region-header-wrapper {
-    line-height: 50px;
-    text-align: right;
 }
 
 .region-header .region-header-wrapper .block.style-phone a::before {
@@ -82,11 +104,9 @@ header {
 }
 
 
-.region-header .region-header-wrapper .block a:visited, .region-header .region-header-wrapper .block a, .region-header .region-header-wrapper .block a:hover {
-    color: #FFF;
-    text-decoration: none;
-    outline: 0;
-}
+
+
+
 a {
     background-color: transparent;
 }
