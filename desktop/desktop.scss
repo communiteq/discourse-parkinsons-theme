@@ -51,7 +51,7 @@ body.navigation-categories #main-outlet {
         margin-left: 5px;
     }
     .column ul a {
-        background-color: #08c;
+        background-color: var(--tertiary);
         padding: 6px 10px;
         font-weight: normal;
         color: #fff;
@@ -88,7 +88,6 @@ body.navigation-categories #main-outlet {
     .center {
         margin: auto;
         width: 50%;
-        border: 3px solid green;
         padding: 10px;
     }
 }

@@ -4,15 +4,30 @@
     --heading-font-family: Nunito, "Open Sans", sans-serif;
     --font-family: Nunito, sans-serif;
     --base-font-size: 18px;
-    --primary: #01011c;
     --tertiary-low: #00adf0;
+    --primary-medium: #050769;
+    --primary-low: var(--tertiary-low);
+    --primary-very-low: #ECECFE;
+    --primary-med-or-secondary-high: var(--primary-medium);
+    --primary-high-or-secondary-low: var(--primary-medium);
+    --primary-med-or-secondary-med: var(--primary-medium);
+    --primary-low-mid-or-secondary-high: var(--primary-medium);
+    --primary-high: var(--primary-medium);
+    --primary-low-mid: var(--primary-medium);
+    --tertiary-low-or-tertiary-high: var(--tertiary-low);
+    --header_primary-low-mid: var(--header-primary);
 
     /* Custom colors */
-    --region-header-bg-color: #000045;
+    --region-header-bg-color: var(--tertiary);
     --region-header-color: #222222;
     --region-header-height: 50px;
-    --region-header-link-color: #00adf0;
+    --region-header-link-color: var(--tertiary-low);
     --region-header-helpline-link-color: #ffffff;
+}
+
+/* someone decided to have a gradient in the secondary admin menu row ?! */
+.admin-controls nav::before, .admin-controls nav::after {
+    background: none;
 }
 
 #topic-title h1 {
@@ -96,16 +111,13 @@ header {
 }
 
 .region-header .region-header-wrapper .block-system-branding-block a.site-logo img {
-    width: 225px;
+    width: 200px;
     position: absolute;
     z-index: 2500;
     left: 15px;
+    top: 5px;
     border: 0;
 }
-
-
-
-
 
 a {
     background-color: transparent;
@@ -114,28 +126,26 @@ a {
     white-space: nowrap;
 }
 
+/* this block is behind the logo and prevents the 'real' logo from shining through */
 .region-header .region-header-wrapper .block-system-branding-block a.site-logo::before {
-
     content: '';
     width: 250px;
-    height: 167px;
-    background-color: #FFF;
-    transform: rotate(-4deg);
+    height: 152px;
+    background-color: var(--header_background);
     position: absolute;
     z-index: 2499;
     top: -40px;
     left: 1px;
-
 }
 
 /***/
 
 
 header.d-header {
-    background-color: #4b4b4b;
+    background-color: var(--region-header-bg-color);
 
     .headerLink a {
-        color: #fff;
+        color: var(--region-header-helpline-link-color);
         text-transform: uppercase;
         font-weight: bold;
         font-size: 12px;
@@ -143,8 +153,7 @@ header.d-header {
     }
 }
 
-
 /* back to normal when docked */
 body.docked header.d-header {
-    background-color: #fff;
+    background-color: var(--header_background);
 }

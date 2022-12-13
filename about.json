@@ -3,18 +3,17 @@
   "about_url": "https://github.com:o7n/dc_theme_parkinsons.git",
   "license_url": "https://github.com:o7n/dc_theme_parkinsons.git",
   "assets": {
-      "stencilregular": "assets/parkinsonsuk_stencilregular.woff",
       "heroimage": "assets/hero.jpg",
       "logo": "assets/parkinsons_logo_192.png"
   },
   "color_schemes": {
-      "ParkinsonsUK": {
-       "primary": "222222",
-       "secondary": "ffffff",
-       "tertiary": "0088cc",
-       "quaternary": "0093c9",
+      "ParkinsonsUK22": {
+       "primary": "01011c",
+       "secondary": "eef3f8",
+       "tertiary": "000045",
+       "quaternary": "333355",
        "header_background": "ffffff",
-       "header_primary": "333333",
+       "header_primary": "01011c",
        "highlight": "ffff4d",
        "danger": "e45735",
        "success": "009900",
