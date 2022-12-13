@@ -15,7 +15,7 @@
     --primary-high: var(--primary-medium);
     --primary-low-mid: var(--primary-medium);
     --tertiary-low-or-tertiary-high: var(--tertiary-low);
-    --header_primary-low-mid: var(--header-primary);
+    --header_primary-low-mid: var(--header_primary);
 
     /* Custom colors */
     --region-header-bg-color: var(--tertiary);
@@ -48,7 +48,6 @@ header {
 }
 
 .region-header .region-header-wrapper {
-    max-width: 1110px;
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex;

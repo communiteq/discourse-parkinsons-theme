@@ -10,6 +10,10 @@
     }
 }
 
+/* Ironically, mobile can go wider than desktop */
+.region-header .region-header-wrapper {
+    max-width: 1110px;
+}
 /*** hero ***/
 
 #hero, #intro {

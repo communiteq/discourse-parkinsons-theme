@@ -11,7 +11,7 @@ body.navigation-categories #intro {
         list-style-type: none;
         font-weight: bold;
         a {
-            background-color: #08c;
+            background-color: var(--tertiary);;
             padding: 6px 10px;
             font-weight: normal;
             color: #fff;
@@ -28,9 +28,9 @@ body.navigation-categories #intro {
 
 .mobile-view {
     .region-header .region-header-wrapper .block-system-branding-block a.site-logo::before {
-        width: 150px;
-        height: 100px;
-        left: 10px;
+        width: 160px;
+        height: 120px;
+        left: 0px;
         top: -5px;
     }
 
