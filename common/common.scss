@@ -40,6 +40,29 @@ header {
     margin-bottom: 0px;
 }
 
+/* Make unread items more easy to spot */
+/* one
+.topic-list-item .main-link a.title, .latest-topic-list-item .main-link a.title {
+    font-weight: 600;
+    color: var(--primary-medium);
+}
+
+.topic-list-item.visited .main-link a.title, .latest-topic-list-item.visited .main-link a.title {
+    font-weight: normal;
+}
+*/
+.topic-list-item .topic-list-data, .latest-topic-list-item .main-link {
+    a.title, a.title:not(.badge-notification) {
+        color: var(--primary-medium);
+    }
+}
+
+.topic-list-item.visited .topic-list-data, .latest-topic-list-item.visited .main-link {
+    a.title, a.title:not(.badge-notification) {
+        color: var(--secondary-medium);
+    }
+}
+
 .region-header {
     font-style: normal;
     font-weight: 400;
@@ -141,8 +164,6 @@ a {
 
 
 header.d-header {
-    background-color: var(--region-header-bg-color);
-
     .headerLink a {
         color: var(--region-header-helpline-link-color);
         text-transform: uppercase;
